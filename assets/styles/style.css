@@ -28,6 +28,12 @@ body{
     transition: transform .5s;
 }
 
+@-moz-document url-prefix() {
+    .card {
+        backface-visibility: hidden; 
+    }
+} 
+
 .card_back, .card_front{
     width: 100%;
     height: 100%;
